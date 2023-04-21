@@ -4,12 +4,37 @@
 
 King Abdullah University of Science and Technology
 
-Please refer to MiniGPT-4 first: https://github.com/Vision-CAIR/MiniGPT-4
+<a href='SkinGPT_v1.pdf'><img src='https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/Paper-PDF-red-20230421135955873.i1NeXY.jpg'></a>
 
-Our paper and weights will be released soon.
+
+
+#### Installation
+
+Please refer to the original MiniGPT-4: https://github.com/Vision-CAIR/MiniGPT-4
+
+
+
+### Download our trained weights
+
+**Our trained weights for skin disease diagnosis will be released soon.**
+
+Then, set the path to the pretrained checkpoint in the evaluation config file in [eval_configs/minigpt4_eval.yaml](https://github.com/Vision-CAIR/MiniGPT-4/blob/main/eval_configs/minigpt4_eval.yaml#L10) at Line 11.
+
+
+
+### Launching Demo Locally
+
+```
+python demo.py --cfg-path eval_configs/minigpt4_eval.yaml  --gpu-id 0
+```
+
+
+
+### Illustraion of SkinGPT
 
 ![fig1](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/fig1.C3gk9r.png)
 
-![fig3](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/fig3.PRlcFl.png)
+### Examples of Skin disease diagnosis
 
+![fig3](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/fig3.PRlcFl.png)
 
