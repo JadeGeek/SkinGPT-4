@@ -2,9 +2,9 @@
 
 [Juexiao Zhou](https://www.joshuachou.ink/), Xin Gao
 
-King Abdullah University of Science and Technology
+King Abdullah University of Science and Technology, KAUST
 
-<a href='SkinGPT_v1.pdf'><img src='https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/Paper-PDF-red-20230421135955873.i1NeXY.jpg'></a>
+<a href='SkinGPT_v1.pdf'><img src='https://img.shields.io/badge/Paper-PDF-red'></a>
 
 
 
