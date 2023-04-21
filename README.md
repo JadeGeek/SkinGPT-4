@@ -8,7 +8,7 @@ King Abdullah University of Science and Technology, KAUST
 
 
 
-#### Installation
+### Installation
 
 Please refer to the original MiniGPT-4: https://github.com/Vision-CAIR/MiniGPT-4
 
