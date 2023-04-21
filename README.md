@@ -1,6 +1,6 @@
 # SkinGPT: A Dermatology Diagnostic System with Vision Large Language Model
 
-Juexiao Zhou, Xin Gao
+[Juexiao Zhou](https://www.joshuachou.ink/), Xin Gao
 
 King Abdullah University of Science and Technology
 
