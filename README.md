@@ -6,7 +6,7 @@ King Abdullah University of Science and Technology, KAUST
 
 <a href='SkinGPT_v1.pdf'><img src='https://img.shields.io/badge/Paper-PDF-red'></a>
 
-
+[Demo](https://051ca82351fea5e09d.gradio.live)
 
 ## Installation
 
