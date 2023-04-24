@@ -62,5 +62,3 @@ If you're using SkinGPT in your research or applications, please cite both SkinG
       year={2023},
 }
 ```
-
-## License
