@@ -16,9 +16,11 @@ Please refer to the original MiniGPT-4: https://github.com/Vision-CAIR/MiniGPT-4
 
 ## Download our trained weights
 
-**Our trained weights for skin disease diagnosis can be downloaded at [here](https://drive.google.com/file/d/1PGBMBioipGxN5yfX6Okx4BGyPBm1prAF/view?usp=sharing).**
+**Our trained weights for skin disease diagnosis can be downloaded at [skinGPT_v1.pth](https://drive.google.com/file/d/1PGBMBioipGxN5yfX6Okx4BGyPBm1prAF/view?usp=sharing).**
 
 Then, set the path to the pretrained checkpoint in the evaluation config file in [eval_configs/minigpt4_eval.yaml](https://github.com/Vision-CAIR/MiniGPT-4/blob/main/eval_configs/minigpt4_eval.yaml#L10) at Line 11.
+
+To access the latest model trained with a much larger in-house dataset, please email: juexiao.zhou@kaust.edu.sa
 
 
 

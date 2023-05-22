@@ -138,7 +138,7 @@ with gr.Blocks() as demo:
         with gr.Column():
             chat_state = gr.State()
             img_list = gr.State()
-            chatbot = gr.Chatbot(label='MiniGPT-4')
+            chatbot = gr.Chatbot(label='SkinGPT')
             text_input = gr.Textbox(label='User', placeholder='Please upload your image first', interactive=False)
     
     upload_button.click(upload_img, [image, text_input, chat_state], [image, text_input, upload_button, chat_state, img_list])
@@ -148,4 +148,4 @@ with gr.Blocks() as demo:
     )
     clear.click(gradio_reset, [chat_state, img_list], [chatbot, image, text_input, upload_button, chat_state, img_list], queue=False)
 
-demo.launch(share=True, enable_queue=True)
+demo.launch(share=True, enable_queue=True, server_port=5905, server_name='0.0.0.0')
