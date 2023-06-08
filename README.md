@@ -1,12 +1,11 @@
 # SkinGPT: A Dermatology Diagnostic System with Vision Large Language Model
 
-[Juexiao Zhou](https://www.joshuachou.ink/), Xin Gao
+[Juexiao Zhou](https://www.joshuachou.ink/), Xiaonan He, Liyuan Sun, Jiannan Xu, Xiuying Chen, Yuetan Chu, Longxi Zhou, Xingyu Liao, Bin Zhang, Xin Gao
 
 King Abdullah University of Science and Technology, KAUST
 
-<a href='SkinGPT_v1.pdf'><img src='https://img.shields.io/badge/Paper-PDF-red'></a>
+<a href='SkinGPT_v4.pdf'><img src='https://img.shields.io/badge/Paper-PDF-red'></a>
 
-[Demo](https://051ca82351fea5e09d.gradio.live)
 
 ## Installation
 
