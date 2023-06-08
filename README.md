@@ -50,7 +50,7 @@ python demo.py --cfg-path eval_configs/minigpt4_eval.yaml  --gpu-id 0
 
 ## Citation
 
-If you're using SkinGPT in your research or applications, please cite both SkinGPT and MiniGPT-4 using this BibTeX:
+If you're using SkinGPT-4 in your research or applications, please cite both SkinGPT-4 and MiniGPT-4 using this BibTeX:
 
 ```
 @misc{zhou2023skingpt,
