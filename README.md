@@ -1,4 +1,4 @@
-# SkinGPT-4: An Interactive Dermatology Diagnostic System with Vision Large Language Model
+# SkinGPT-4: An Interactive Dermatology Diagnostic System with Visual Large Language Model
 
 [Juexiao Zhou](https://www.joshuachou.ink/), Xiaonan He, Liyuan Sun, Jiannan Xu, Xiuying Chen, Yuetan Chu, Longxi Zhou, Xingyu Liao, Bin Zhang, Xin Gao
 
@@ -14,7 +14,7 @@ Please refer to the original MiniGPT-4: https://github.com/Vision-CAIR/MiniGPT-4
 
 ## Download our trained weights
 
-**Our trained weights for skin disease diagnosis can be downloaded at [skinGPT_v1.pth](https://drive.google.com/file/d/1PGBMBioipGxN5yfX6Okx4BGyPBm1prAF/view?usp=sharing).**
+**Our primary trained weights for skin disease diagnosis with only step-1 dataset could be downloaded at [skinGPT_v1.pth](https://drive.google.com/file/d/1PGBMBioipGxN5yfX6Okx4BGyPBm1prAF/view?usp=sharing).**
 
 Then, set the path to the pretrained checkpoint in the evaluation config file in [eval_configs/minigpt4_eval.yaml](https://github.com/Vision-CAIR/MiniGPT-4/blob/main/eval_configs/minigpt4_eval.yaml#L10) at Line 11.
 
@@ -54,7 +54,7 @@ If you're using SkinGPT in your research or applications, please cite both SkinG
 
 ```
 @misc{zhou2023skingpt,
-      title={SkinGPT-4: An Interactive Dermatology Diagnostic System with Vision Large Language Model}, 
+      title={SkinGPT-4: An Interactive Dermatology Diagnostic System with Visual Large Language Model}, 
       author={Juexiao Zhou and Xiaonan He and Liyuan Sun and Jiannan Xu and Xiuying Chen and Yuetan Chu and Longxi Zhou and Xingyu Liao and Bin Zhang and Xin Gao},
       year={2023},
       eprint={2304.10691},
