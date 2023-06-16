@@ -18,9 +18,7 @@ Please refer to the original MiniGPT-4: https://github.com/Vision-CAIR/MiniGPT-4
 
 Then, set the path to the pretrained checkpoint in the evaluation config file in [eval_configs/minigpt4_eval.yaml](https://github.com/Vision-CAIR/MiniGPT-4/blob/main/eval_configs/minigpt4_eval.yaml#L10) at Line 11.
 
-To access the **latest non-commercial model** trained with a much larger in-house dataset, please email: juexiao.zhou@kaust.edu.sa
-
-
+The model trained with both public datasets and the in-house dataset is not publicly available currently, but please feel free to keep in touch with juexiao.zhou@kaust.edu.sa and xin.gao@kaust.edu.sa for potential cooperation.
 
 ## Launching Demo Locally
 
