@@ -116,8 +116,7 @@ with gr.Blocks() as demo:
             image = gr.Image(type="pil")
             upload_button = gr.Button(value="Upload & Start Chat", interactive=True, variant="primary")
             clear = gr.Button("Restart")
-            
-"""
+
             num_beams = gr.Slider(
                 minimum=1,
                 maximum=10,
@@ -135,9 +134,6 @@ with gr.Blocks() as demo:
                 interactive=True,
                 label="Temperature",
             )
-"""
-	num_beams = 1
-	temperature = 1
 
         with gr.Column():
             chat_state = gr.State()

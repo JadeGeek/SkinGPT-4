@@ -53,7 +53,7 @@ python demo.py --cfg-path eval_configs/minigpt4_eval.yaml  --gpu-id 0
 If you're using SkinGPT-4 in your research or applications, please cite both SkinGPT-4 and MiniGPT-4 using this BibTeX:
 
 ```
-@misc{zhou2023skingpt4,
+@misc{zhou2023skingpt,
       title={SkinGPT-4: An Interactive Dermatology Diagnostic System with Visual Large Language Model}, 
       author={Juexiao Zhou and Xiaonan He and Liyuan Sun and Jiannan Xu and Xiuying Chen and Yuetan Chu and Longxi Zhou and Xingyu Liao and Bin Zhang and Xin Gao},
       year={2023},
