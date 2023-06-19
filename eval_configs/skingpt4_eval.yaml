@@ -3,12 +3,12 @@ model:
   model_type: pretrain_vicuna
   freeze_vit: True
   freeze_qformer: True
-  max_txt_len: 1028
+  max_txt_len: 160
   end_sym: "###"
   low_resource: False
-  prompt_path: "prompts/alignment.txt"
+  prompt_path: "prompts/alignment_skin.txt"
   prompt_template: '###Human: {} ###Assistant: '
-  ckpt: '/home/zhouj0d/disk4/PID27.ChatSkin/MiniGPT-4/weights/skingpt_v2.pth'
+  ckpt: '/home/zhouj0d/disk4/PID27.ChatSkin/SkinGPT/weights/skingpt_v4.2.pth'
 
 
 datasets:
