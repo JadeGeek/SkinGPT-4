@@ -11,7 +11,6 @@ King Abdullah University of Science and Technology, KAUST
 Please refer to the original MiniGPT-4: https://github.com/Vision-CAIR/MiniGPT-4
 
 
-
 ## Download our trained weights
 
 **Our primary trained weights for skin disease diagnosis with only step-1 dataset could be downloaded at [skinGPT_v1.pth](https://drive.google.com/file/d/1PGBMBioipGxN5yfX6Okx4BGyPBm1prAF/view?usp=sharing).**
@@ -23,12 +22,10 @@ The model trained with both public datasets and the in-house dataset is **not pu
 ## Launching Demo Locally
 
 ```
-python demo.py --cfg-path eval_configs/minigpt4_eval.yaml  --gpu-id 0
+python demo.py --cfg-path eval_configs/skingpt4_eval.yaml  --gpu-id 0
 ```
 
-
-
-## Illustraion of SkinGPT
+## Illustraion of SkinGPT-4
 
 ![fig1](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/fig1.b1JNr3.png)
 
