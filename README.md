@@ -53,6 +53,13 @@ python demo.py --cfg-path eval_configs/skingpt4_eval_falcon40b.yaml  --gpu-id 0
 
 
 
+## Acknowledgement
+
+- [MiniGPT-4](https://minigpt-4.github.io/) This repo is developped on MiniGPT-4, an awesome repo for vision-language chatbot!
+- Lavis
+- Vicuna
+- Falcon
+
 ## Citation
 
 If you're using SkinGPT-4 in your research or applications, please cite SkinGPT-4 using this BibTeX:
