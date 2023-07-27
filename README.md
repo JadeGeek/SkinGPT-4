@@ -4,7 +4,7 @@
 
 King Abdullah University of Science and Technology, KAUST
 
-<a href='SkinGPT_4_manuscript_v4.pdf'><img src='https://img.shields.io/badge/Paper-PDF-red'></a>
+<a href='SkinGPT_4_manuscript_v7.pdf'><img src='https://img.shields.io/badge/Paper-PDF-red'></a>
 
 ## Installation
 
