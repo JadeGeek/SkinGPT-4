@@ -1,4 +1,4 @@
-# SkinGPT-4: An Interactive Dermatology Diagnostic System with Visual Large Language Model
+# Pre-trained Multimodal Large Language Model Enhances Dermatological Diagnosis using SkinGPT-4
 
 [Juexiao Zhou](https://www.joshuachou.ink/), Xiaonan He, Liyuan Sun, Jiannan Xu, Xiuying Chen, Yuetan Chu, Longxi Zhou, Xingyu Liao, Bin Zhang, Xin Gao
 
@@ -8,26 +8,36 @@ King Abdullah University of Science and Technology, KAUST
 
 ## Installation
 
-Please refer to the original MiniGPT-4: https://github.com/Vision-CAIR/MiniGPT-4
+```
+conda env create -f environment.yml
+conda activate skingpt4
+conda install -c conda-forge mamba=1.4.7
+
+# falcon
+pip install einops
+```
+
+
 
 
 ## Download our trained weights
 
-**Our primary trained weights for skin disease diagnosis with only step-1 dataset could be downloaded at [skinGPT_v1.pth](https://drive.google.com/file/d/1PGBMBioipGxN5yfX6Okx4BGyPBm1prAF/view?usp=sharing).**
+**Our previous trained weights for skin disease diagnosis with only step-1 dataset and Vicuna could be downloaded at [skinGPT_v1.pth](https://drive.google.com/file/d/1PGBMBioipGxN5yfX6Okx4BGyPBm1prAF/view?usp=sharing).**
 
-Then, set the path to the pretrained checkpoint in the evaluation config file in [eval_configs/minigpt4_eval.yaml](https://github.com/Vision-CAIR/MiniGPT-4/blob/main/eval_configs/minigpt4_eval.yaml#L10) at Line 11.
+The latest model trained with both **public datasets** and the **proprietary dataset** based on **falcon-40b-instruct** is **not publicly available** currently, but please feel free to keep in touch with **juexiao.zhou@kaust.edu.sa** and **xin.gao@kaust.edu.sa** for potential collaboration.
 
-The model trained with both public datasets and the in-house dataset is **not publicly available** currently, but please feel free to keep in touch with **juexiao.zhou@kaust.edu.sa** and **xin.gao@kaust.edu.sa** for potential collaboration.
+
 
 ## Launching Demo Locally
 
 ```
-python demo.py --cfg-path eval_configs/skingpt4_eval.yaml  --gpu-id 0
+python demo.py --cfg-path eval_configs/skingpt4_eval_vicuna.yaml  --gpu-id 0
+python demo.py --cfg-path eval_configs/skingpt4_eval_falcon40b.yaml  --gpu-id 0
 ```
 
 ## Illustraion of SkinGPT-4
 
-![fig1](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/fig1.b1JNr3.png)
+![fig1](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/adReRl.fig1.png)
 
 
 
@@ -39,13 +49,13 @@ python demo.py --cfg-path eval_configs/skingpt4_eval.yaml  --gpu-id 0
 
 ## Clinical Evaluation
 
-![fig4](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/fig4.CyZ6yO.png)
+![fig4](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/B40U3b.fig4.png)
 
 
 
 ## Citation
 
-If you're using SkinGPT-4 in your research or applications, please cite both SkinGPT-4 and MiniGPT-4 using this BibTeX:
+If you're using SkinGPT-4 in your research or applications, please cite SkinGPT-4 using this BibTeX:
 
 ```
 @misc{zhou2023skingpt,
@@ -55,13 +65,5 @@ If you're using SkinGPT-4 in your research or applications, please cite both Ski
       eprint={2304.10691},
       archivePrefix={arXiv},
       primaryClass={eess.IV}
-}
-```
-
-```
-@misc{zhu2022minigpt4,
-      title={MiniGPT-4: Enhancing Vision-language Understanding with Advanced Large Language Models}, 
-      author={Deyao Zhu and Jun Chen and Xiaoqian Shen and xiang Li and Mohamed Elhoseiny},
-      year={2023},
 }
 ```
