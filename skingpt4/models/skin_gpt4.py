@@ -88,8 +88,6 @@ class SkinGPT4(Blip2Base):
         print('Loading Q-Former Done')
 
         print('Loading LLM')
-        #self.llm_tokenizer = LlamaTokenizer.from_pretrained(llm_model, use_fast=False)
-        #self.llm_tokenizer = BloomTokenizerFast.from_pretrained(llm_model)
         self.llm_tokenizer = AutoTokenizer.from_pretrained(llm_model, use_fast=False)
         self.llm_tokenizer.pad_token = self.llm_tokenizer.eos_token
         print("token_id", self.llm_tokenizer.pad_token, self.llm_tokenizer.eos_token, self.llm_tokenizer.bos_token_id, self.llm_tokenizer.eos_token_id)
@@ -97,10 +95,25 @@ class SkinGPT4(Blip2Base):
         print("token_id", self.llm_tokenizer.pad_token, self.llm_tokenizer.eos_token, self.llm_tokenizer.bos_token_id,
               self.llm_tokenizer.eos_token_id)
 
-        # falcon
         self.llm_path = llm_model
         print('llm_model path: ', self.llm_path)
-        if 'falcon-7b-instruct' in llm_model:
+        # vicuna version
+        if 'vicuna' in llm_model:
+            self.llm_tokenizer = LlamaTokenizer.from_pretrained(llm_model, use_fast=False)
+            if self.low_resource:
+                self.llama_model = LlamaForCausalLM.from_pretrained(
+                    llm_model,
+                    torch_dtype=torch.float16,
+                    load_in_8bit=True,
+                    device_map={'': device_8bit}
+                )
+            else:
+                self.llama_model = LlamaForCausalLM.from_pretrained(
+                    llm_model,
+                    torch_dtype=torch.float16,
+                )
+        # falcon version
+        elif 'falcon-7b-instruct' in llm_model:
             if self.low_resource:
                 self.llm_model = FalconForCausalLM.from_pretrained(
                     llm_model,
